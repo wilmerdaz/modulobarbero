@@ -1,0 +1,173 @@
+
+/*CUERPO*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: url(../img/imagen1.jpg);
+  background-size:cover;
+  
+}
+* {
+  box-sizing: border-box;
+
+}
+
+/*CONTENEDORES*/
+.contenedor{
+  width: 100%;
+  padding: 50px;
+  
+}
+
+ .input-contenedor{
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  outline: none;
+}
+
+/*FORMULARIO*/
+
+.formulario{
+  background: #fff;
+  margin-top: 150%;
+  padding: 3px;
+}
+
+@media(min-width:768px)
+{
+  .formulario{
+    margin: auto;
+    width: 500px;
+    margin-top: 150px;
+    border-radius: 2px;
+  }
+}
+
+/*H1*/
+h1{
+  text-align: center;
+  color: #1a2537;
+  font-size: 40px;
+}
+
+/*ENTRADAS*/
+input[type="text"], 
+input[type="password"]{
+  font-size:  20px;
+  width: 82%;
+  padding: 10px;
+  border: 4px;
+}
+
+/*ICONOS*/
+.icon{
+  min-width: 50px;
+  text-align: center;
+  color: #999;
+}
+
+.icon2{
+  color: rgb(255, 0, 85);
+}
+
+.icon3{
+  color: rgb(72, 228, 98, 0.76);
+  font-size: 60px;
+  margin-left: 220px;
+  margin-top: 40px;
+}
+
+/*BOTONES*/
+.btn{
+  
+  display: inline-block;
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background: rgb(72, 228, 98, 0.76);
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration-color: transparent;
+  margin-top: 10px;
+  
+}
+.btn:hover{
+  background: cadetblue;
+}
+
+.btn2{
+  
+  display: inline-block;
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background: #999ea7;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration-color: transparent;
+  margin-top: 10px;
+  
+  
+  
+}
+.btn2:hover{
+  background: cadetblue;
+}
+
+
+/*PARRAFOS*/
+p{
+  text-align: center;
+
+/*ENLACES*/
+
+}
+.link{
+  text-decoration: none;
+  color: #16f0a7;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.link:hover{
+  color: cadetblue;
+
+
+}
+.link2{
+  text-decoration: none;
+  color: #e63b51;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.link2:hover{
+  color: cadetblue;
+}
+
+/*FRACES*/
+.bienvenido{
+  text-align: center;
+  background: rgb(63, 160, 240);
+  width: 200px;
+  padding: 10px;
+  margin-left: 150px;
+  border: 1px solid #aaa;
+  margin-top: 40px;
+  border-radius: 3%;
+  border: none;
+  
+}
+.frase{
+  float: left;
+  margin-left: 1225px;
+  bottom: 100%;
+  font-size: 45px;
+  color: rgba(40, 14, 144, 0.76);
+  margin-top: 1px;
+}
+
+

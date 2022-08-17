@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: white;
+    background-position-x: center;
+    background-size:cover;
+    background-attachment:initial;
+  }
+  * {
+    box-sizing: border-box;
+  }
+.header{
+    position: relative;
+    background: transparent;
+    height: 115px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #dee2e6;
+    
+    
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.btn-home{
+    color: #fff;
+    background-color: rgba(40, 5, 238, 0.863);
+    border-radius: 1px;
+    box-shadow: none;
+    height: 50PX;
+    width: 170PX;
+    border-radius: 3px;
+    border: thin;
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-home:hover{
+  background: cadetblue;
+}
+
+.user{
+  position: absolute;
+  position: relative;
+  left: 1600px;
+  top: 10px;
+  background: gray;
+  line-height: 60px;
+  width: 300px;
+  height: 60px;
+  border-radius: 3px;
+}
+
+.imag .img-circ{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  top: 10px;
+  
+}
+.info{
+  position:absolute;
+  
+  width: 240px;
+  height: 60px;
+  left: 60px;
+  bottom: 0px;
+  border-left: 2px solid #dee2e6;;
+}
+
+.col{
+  position: relative;
+  position: fixed;
+  border-right: 1px solid #dee2e6;;;
+  width: 250px;
+  height: 830px;
+  top: 115px;
+  
+
+}
+
+.nav{
+  text-align: center;
+  padding: 50px;
+  
+}
+
+.titulo{
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  color: rgba(128, 128, 128, 0.89)
+}
+
+.btn{
+  height: 70px;
+  width: 100px;
+}
+
+.btn:hover{
+  background: rgba(196, 7, 54, 0.89);
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+  width: 87%;
+  left: 250px;
+  top: 55px;
+
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 45%;
+  
+
+  
+
+}
+.form-group2{
+  position: absolute;
+  margin-bottom: 20px;
+  width: 45%;
+  left: 900px;
+  bottom: 115px;
+  
+}
+
+

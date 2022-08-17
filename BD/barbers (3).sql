@@ -1,0 +1,96 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 18-08-2022 a las 01:16:41
+-- Versión del servidor: 10.4.22-MariaDB
+-- Versión de PHP: 8.1.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `barbers`
+--
+CREATE DATABASE IF NOT EXISTS `barbers` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `barbers`;
+
+DELIMITER $$
+--
+-- Procedimientos
+--
+DROP PROCEDURE IF EXISTS `SpEditarBarbero`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SpEditarBarbero` (IN `_CEDULA` INT(15), IN `_NOMBRE` VARCHAR(30), IN `_APELLIDO` VARCHAR(30), IN `_NUM_CELULAR` INT(15), IN `_F_NACIMIENTO` DATE, IN `_EMAIL` VARCHAR(30))  BEGIN
+      UPDATE `barberos` SET `NOMBRE`=_NOMBRE, 
+      `APELLIDO`=_APELLIDO,
+      `NUM_CELULAR`=_NUM_CELULAR,
+      `F_NACIMIENTO`=_F_NACIMIENTO,
+      `EMAIL`=_EMAIL
+      WHERE `CEDULA`=_CEDULA;
+	
+
+END$$
+
+DROP PROCEDURE IF EXISTS `SpEliminarBarbero`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SpEliminarBarbero` (IN `_CEDULA` INT(15))  BEGIN
+
+DELETE FROM barberos WHERE CEDULA = _CEDULA;
+
+
+END$$
+
+DROP PROCEDURE IF EXISTS `SpInsertarBarbero`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SpInsertarBarbero` (IN `_CEDULA` INT(15), IN `_NOMBRE` VARCHAR(30), IN `_APELLIDO` VARCHAR(30), IN `_NUM_CELULAR` INT(15), IN `_F_NACIMIENTO` DATE, IN `_EMAIL` VARCHAR(30), IN `_CONTRASENA` VARCHAR(30))  BEGIN
+INSERT INTO barberos (CEDULA, NOMBRE, APELLIDO, NUM_CELULAR, F_NACIMIENTO, EMAIL, CONTRASENA ) VALUES (_CEDULA, _NOMBRE, _APELLIDO,  _NUM_CELULAR, _F_NACIMIENTO, _EMAIL, _CONTRASENA);
+
+
+END$$
+
+DROP PROCEDURE IF EXISTS `SpVerBarbero`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SpVerBarbero` ()  BEGIN
+
+    SELECT `CEDULA`, `NOMBRE`, `APELLIDO`,`NUM_CELULAR`, 					`F_NACIMIENTO`, `EMAIL` FROM `barberos`;
+
+
+END$$
+
+DELIMITER ;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `barberos`
+--
+
+DROP TABLE IF EXISTS `barberos`;
+CREATE TABLE IF NOT EXISTS `barberos` (
+  `CEDULA` int(15) NOT NULL,
+  `NOMBRE` varchar(30) DEFAULT NULL,
+  `APELLIDO` varchar(30) DEFAULT NULL,
+  `NUM_CELULAR` int(15) DEFAULT NULL,
+  `F_NACIMIENTO` date DEFAULT NULL,
+  `EMAIL` varchar(30) DEFAULT NULL,
+  `CONTRASENA` varchar(60) DEFAULT NULL,
+  PRIMARY KEY (`CEDULA`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `barberos`
+--
+
+INSERT INTO `barberos` (`CEDULA`, `NOMBRE`, `APELLIDO`, `NUM_CELULAR`, `F_NACIMIENTO`, `EMAIL`, `CONTRASENA`) VALUES
+(14555454, 'isaac', 'gazconnnnnn', 31115458, '0000-00-00', 'i@gmail.com', '123'),
+(2147483647, 'isaac', 'gazcon', 2147483647, '2022-08-01', 'i@gmail.com', '123');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

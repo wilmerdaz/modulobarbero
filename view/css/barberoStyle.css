@@ -1,0 +1,236 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: rgb(255,0,0);
+    background: linear-gradient(315deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 47%, rgba(9,15,121,1) 86%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+  
+
+  
+  
+.btn-homes{
+    color: #fff;
+    background-color: rgba(40, 5, 238, 0.863);
+    border-radius: 1px;
+    box-shadow: none;
+    height: 50PX;
+    width: 170PX;
+    border-radius: 3px;
+    border: thin;
+    bottom: 50px;
+    left: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 1300px;
+}
+.btn-home:hover{
+  background: cadetblue;
+}
+
+/*MOCKUP1------REGISTRO DE USUARIO/datos personales---------*/ 
+.logo1u{
+    float: left;
+    margin-left: 10px;
+    border: none;
+    border-color: none;
+    color: none;
+    border-radius: none;
+    
+}
+.logo1a{
+    width: 150px;
+    height: 150px;
+    border-radius: 3px;
+    border-color: rgb(63, 160, 240);
+    border-style: solid;
+    
+}
+.R_usuari{/*------estilo para el titulo "registro de usuario-------"*/
+    text-align: center;
+    background: rgb(63, 160, 240);
+    font-weight: 100px;
+    font-size: 35px;
+    width: 800px;
+    height: 40px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #aaa;
+    margin-top: 40px;
+    border-radius: 3%;
+    border: none;
+    
+}
+.main1{
+    margin-left: auto;
+    margin-right: 170px;
+    
+}
+.Form_datper{ /*estilo para centrar los campos de texto*/
+    text-align: center;
+ 
+ }
+.DatPers1{/*------estilo para el contenedor "datos personales"*/
+    width: 755px;
+    height: 1000px;
+    margin-left: 425px;
+    margin-right: auto;
+    margin-top: 90px;
+    background-color: azure;
+    border: 3px solid rgb(106, 97, 235);
+    border-radius: 3%;
+    
+
+}
+.Lege_txto{/*estilo para el titulo datos personales*/
+    font-size: 40px;
+    color: rgb(63, 160, 240);
+}
+.BotDatPer{/*estilo para los input*/
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+    height: 50px;  
+    
+}
+
+.BotDa_Num{/*estilo para el input number*/
+    font-size: 20px;
+    width: 60%;
+    height: 50px;  
+    text-align: center;
+}
+.btnCa{/* estilo para el boton cancelar*/
+    font-size: 20px;
+    width: 30%;
+    height: 45px;
+    background-color:#da0063;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.btnCon{/*estilo para el boton continuar*/
+    font-size: 20px;
+    width: 30%;
+    background-color:rgb(63, 160, 240);
+    border: none;
+    border-radius: 3px;
+    height: 45px;
+    cursor: pointer;
+
+}
+.frase1{ /*estilo para la frase i love barber*/
+    margin-left: 36cm;
+    color:rgb(63, 160, 240);
+    font-size: 25px;
+
+}
+
+
+
+/*MOCKUP2------REGISTRO DE USUARIO/datos personales---------*/ 
+
+
+
+.logo2{
+    float: left;
+    margin-left: 10px;
+    border: none;
+    border-color: none;
+    color: none;
+    border-radius: none;
+}
+.logoi2{
+    width: 150px;
+    height: 150px;
+    border-radius: 3px;
+    border-color: rgb(63, 160, 240);
+    border-style: solid;
+}
+.R_usuar2{/*------estilo para el titulo "registro de usuario-------"*/
+    text-align: center;
+    background: rgb(63, 160, 240);
+    font-weight: 100px;
+    font-size: 35px;
+    width: 800px;
+    height: 40px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #aaa;
+    margin-top: 40px;
+    border-radius: 3%;
+    border: none;
+    
+}
+.main2{
+    
+    margin-left: auto;
+    margin-right: 100px;
+}
+.Form_datusu{ /*estilo para centrar los campos de texto*/
+    text-align: center;
+}
+.Dat_usu{/*------estilo para el contenedor "datos de usuario"*/
+    width: 800px;
+    height: 550px;
+    margin-left: 520px;
+    margin-right: auto;
+    margin-top: 70px;
+    background-color: azure;
+    border: 3px solid rgb(63, 160, 240);
+    border-radius: 3%;
+    flex-direction: row;
+}
+.Lege_txt2{
+    font-size: 40px;
+    color: rgb(63, 160, 240);
+    text-align: center;
+}
+.Bot_emai{/*estilo para el input de e-mail*/
+    width: 70%;
+    height: 50px; 
+    text-align: center;
+    font-size: 20px;
+}
+.BotDatUsu{/*estilo para centrar los placeholder*/
+    text-align: center;
+    width: 70%;
+    height: 50px; 
+    font-size: 20px;
+
+}
+.btnC{/* estilo para el boton cancelar*/
+    font-size: 20px;
+    width: 30%;
+    height: 45px;
+    background-color:#da0063;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.btnCo{/*estilo para el boton continuar*/
+    font-size: 20px;
+    width: 30%;
+    background-color:rgb(63, 160, 240);
+    border: none;
+    border-radius: 3px;
+    height: 45px;
+    cursor: pointer;
+}
+.frase2{ /*estilo para la frase i love barber*/
+    margin-left: 36cm;
+    color:rgb(63, 160, 240);
+    font-size: 25px;
+}
+
+
+
+
+
